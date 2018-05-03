@@ -20,22 +20,9 @@
 			#nav_collapse{
 			 display: none;
 			}
-			body{
-			padding-top: 200px;
-
-			}
+			
 		}
-		@media (max-width: 767px){
-			body{
-			padding-top: 70px;
-			}
-		}
-		body{
-			transition: padding-top 0.2s linear;
-		}
-		/*.btn{
-			margin: 6px;
-		}*/
+		
 		#bottom{
 			margin-top: 100px;
 			background-color: rgba(238,238,238,0.5);
@@ -56,10 +43,25 @@
 		.panel-footer{
 			background-color: white;
 		}
+		.panel-body{
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		}
+		.panel-footer{
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+		.panel{
+			border-radius: 10px;
+		}
+		.panel .btn{
+			background-color: white;
+			border: 1px solid gray;
+		}
 	</style>
 </head>
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar navbar-inverse" id="navbar_place">
 		<div class="collapse navbar-collapse col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2" id="nav_collapse">
 			<div class="row">
 				<div class="col-xs-7 col-sm-5">
@@ -97,190 +99,190 @@
 
 	<div id="bottom">
 		<div class="container" style="padding: 100px 0;">
-			<div class="row">
-				<div class="col-xs-4">
-					<div class="panel panel-default">
-						<div class="panel-body" style="text-align: center;">
-							<h3 class="white_color" id="thumbnail">Thumbnail</h3>
-						</div>
-						<div class="panel-footer">
-							<p>
-								This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-							</p>
+				<div class="row">
+					<div class="col-xs-4">
+						<div class="panel panel-default">
+							<div class="panel-body" style="text-align: center;">
+								<h3 class="white_color" id="thumbnail">Thumbnail</h3>
+							</div>
+							<div class="panel-footer">
+								<p>
+									This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+								</p>
 								<div style="display: flex; justify-content: space-between;">
 									<div>
-										<button class="btn btn-sm btn-outline-secondary">View</button><button class="btn btn-sm btn-outline-secondary" >Edit</button>
+										<button class="btn btn-sm text-muted">View</button><button class="btn btn-sm text-muted" >Edit</button>
 									</div>
 									<span class="text-muted" style="text-align: right; font-size: smaller;">9 mins</span>
 								</div>	
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-xs-4">
-					<div class="panel panel-default">
-						<div class="panel-body">
-							<h3 class="white_color" id="thumbnail">Thumbnail</h3>
-						</div>
-						<div class="panel-footer">
-							<p>
-								This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-							</p>
+					<div class="col-xs-4">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<h3 class="white_color" id="thumbnail">Thumbnail</h3>
+							</div>
+							<div class="panel-footer">
+								<p>
+									This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+								</p>
 								<div style="display: flex; justify-content: space-between;">
 									<div>
-										<button class="btn btn-sm btn-outline-secondary">View</button><button class="btn btn-sm btn-outline-secondary" >Edit</button>
+										<button class="btn btn-sm text-muted">View</button><button class="btn btn-sm text-muted" >Edit</button>
 									</div>
 									<span class="text-muted" style="text-align: right; font-size: smaller;">9 mins</span>
 								</div>	
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="panel panel-default">
+							<div class="panel-body" >
+								<h3 class="white_color" id="thumbnail">Thumbnail</h3>
+							</div>
+							<div class="panel-footer">
+								<p>
+									This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+								</p>
+									<div style="display: flex; justify-content: space-between;">
+										<div>
+											<button class="btn btn-sm text-muted">View</button><button class="btn btn-sm text-muted" >Edit</button>
+										</div>
+										<span class="text-muted" style="text-align: right; font-size: smaller;">9 mins</span>
+									</div>	
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-4">
-					<div class="panel panel-default">
-						<div class="panel-body" >
-							<h3 class="white_color" id="thumbnail">Thumbnail</h3>
+				<div class="row">
+					<div class="col-xs-4">
+						<div class="panel panel-default">
+							<div class="panel-body" style="text-align: center;">
+								<h3 class="white_color" id="thumbnail">Thumbnail</h3>
+							</div>
+							<div class="panel-footer">
+								<p>
+									This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+								</p>
+									<div style="display: flex; justify-content: space-between;">
+										<div>
+											<button class="btn btn-sm text-muted">View</button><button class="btn btn-sm text-muted" >Edit</button>
+										</div>
+										<span class="text-muted" style="text-align: right; font-size: smaller;">9 mins</span>
+									</div>	
+							</div>
 						</div>
-						<div class="panel-footer">
-							<p>
-								This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-							</p>
-								<div style="display: flex; justify-content: space-between;">
-									<div>
-										<button class="btn btn-sm btn-outline-secondary">View</button><button class="btn btn-sm btn-outline-secondary" >Edit</button>
-									</div>
-									<span class="text-muted" style="text-align: right; font-size: smaller;">9 mins</span>
-								</div>	
+					</div>
+					<div class="col-xs-4">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<h3 class="white_color" id="thumbnail">Thumbnail</h3>
+							</div>
+							<div class="panel-footer">
+								<p>
+									This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+								</p>
+									<div style="display: flex; justify-content: space-between;">
+										<div>
+											<button class="btn btn-sm text-muted">View</button><button class="btn btn-sm text-muted" >Edit</button>
+										</div>
+										<span class="text-muted" style="text-align: right; font-size: smaller;">9 mins</span>
+									</div>	
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="panel panel-default">
+							<div class="panel-body" >
+								<h3 class="white_color" id="thumbnail">Thumbnail</h3>
+							</div>
+							<div class="panel-footer">
+								<p>
+									This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+								</p>
+									<div style="display: flex; justify-content: space-between;">
+										<div>
+											<button class="btn btn-sm text-muted">View</button><button class="btn btn-sm text-muted" >Edit</button>
+										</div>
+										<span class="text-muted" style="text-align: right; font-size: smaller;">9 mins</span>
+									</div>	
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-4">
-					<div class="panel panel-default">
-						<div class="panel-body" style="text-align: center;">
-							<h3 class="white_color" id="thumbnail">Thumbnail</h3>
+				<div class="row">
+					<div class="col-xs-4">
+						<div class="panel panel-default">
+							<div class="panel-body" style="text-align: center;">
+								<h3 class="white_color" id="thumbnail">Thumbnail</h3>
+							</div>
+							<div class="panel-footer">
+								<p>
+									This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+								</p>
+									<div style="display: flex; justify-content: space-between;">
+										<div>
+											<button class="btn btn-sm text-muted">View</button><button class="btn btn-sm text-muted" >Edit</button>
+										</div>
+										<span class="text-muted" style="text-align: right; font-size: smaller;">9 mins</span>
+									</div>	
+							</div>
 						</div>
-						<div class="panel-footer">
-							<p>
-								This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-							</p>
-								<div style="display: flex; justify-content: space-between;">
-									<div>
-										<button class="btn btn-sm btn-outline-secondary">View</button><button class="btn btn-sm btn-outline-secondary" >Edit</button>
-									</div>
-									<span class="text-muted" style="text-align: right; font-size: smaller;">9 mins</span>
-								</div>	
+					</div>
+					<div class="col-xs-4">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<h3 class="white_color" id="thumbnail">Thumbnail</h3>
+							</div>
+							<div class="panel-footer">
+								<p>
+									This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+								</p>
+									<div style="display: flex; justify-content: space-between;">
+										<div>
+											<button class="btn btn-sm text-muted">View</button><button class="btn btn-sm text-muted" >Edit</button>
+										</div>
+										<span class="text-muted" style="text-align: right; font-size: smaller;">9 mins</span>
+									</div>	
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="panel panel-default">
+							<div class="panel-body" >
+								<h3 class="white_color" id="thumbnail">Thumbnail</h3>
+							</div>
+							<div class="panel-footer">
+								<p>
+									This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+								</p>
+									<div style="display: flex; justify-content: space-between;">
+										<div>
+											<button class="btn btn-sm text-muted">View</button><button class="btn btn-sm text-muted" >Edit</button>
+										</div>
+										<span class="text-muted" style="text-align: right; font-size: smaller;">9 mins</span>
+									</div>	
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-4">
-					<div class="panel panel-default">
-						<div class="panel-body">
-							<h3 class="white_color" id="thumbnail">Thumbnail</h3>
-						</div>
-						<div class="panel-footer">
-							<p>
-								This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-							</p>
-								<div style="display: flex; justify-content: space-between;">
-									<div>
-										<button class="btn btn-sm btn-outline-secondary">View</button><button class="btn btn-sm btn-outline-secondary" >Edit</button>
-									</div>
-									<span class="text-muted" style="text-align: right; font-size: smaller;">9 mins</span>
-								</div>	
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-4">
-					<div class="panel panel-default">
-						<div class="panel-body" >
-							<h3 class="white_color" id="thumbnail">Thumbnail</h3>
-						</div>
-						<div class="panel-footer">
-							<p>
-								This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-							</p>
-								<div style="display: flex; justify-content: space-between;">
-									<div>
-										<button class="btn btn-sm btn-outline-secondary">View</button><button class="btn btn-sm btn-outline-secondary" >Edit</button>
-									</div>
-									<span class="text-muted" style="text-align: right; font-size: smaller;">9 mins</span>
-								</div>	
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-4">
-					<div class="panel panel-default">
-						<div class="panel-body" style="text-align: center;">
-							<h3 class="white_color" id="thumbnail">Thumbnail</h3>
-						</div>
-						<div class="panel-footer">
-							<p>
-								This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-							</p>
-								<div style="display: flex; justify-content: space-between;">
-									<div>
-										<button class="btn btn-sm btn-outline-secondary">View</button><button class="btn btn-sm btn-outline-secondary" >Edit</button>
-									</div>
-									<span class="text-muted" style="text-align: right; font-size: smaller;">9 mins</span>
-								</div>	
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-4">
-					<div class="panel panel-default">
-						<div class="panel-body">
-							<h3 class="white_color" id="thumbnail">Thumbnail</h3>
-						</div>
-						<div class="panel-footer">
-							<p>
-								This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-							</p>
-								<div style="display: flex; justify-content: space-between;">
-									<div>
-										<button class="btn btn-sm btn-outline-secondary">View</button><button class="btn btn-sm btn-outline-secondary" >Edit</button>
-									</div>
-									<span class="text-muted" style="text-align: right; font-size: smaller;">9 mins</span>
-								</div>	
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-4">
-					<div class="panel panel-default">
-						<div class="panel-body" >
-							<h3 class="white_color" id="thumbnail">Thumbnail</h3>
-						</div>
-						<div class="panel-footer">
-							<p>
-								This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-							</p>
-								<div style="display: flex; justify-content: space-between;">
-									<div>
-										<button class="btn btn-sm btn-outline-secondary">View</button><button class="btn btn-sm btn-outline-secondary" >Edit</button>
-									</div>
-									<span class="text-muted" style="text-align: right; font-size: smaller;">9 mins</span>
-								</div>	
-						</div>
-					</div>
-				</div>
-			</div>
+		</div>	
+	</div>
+	<div class="container">
+		<div class="row" style="margin-top: 40px; display: flex; justify-content: space-between;">
+			<address class="text-muted" style="font-size: larger;">
+				Album example is © Bootstrap, but please download and customize it for yourself! <br>
+				New to Bootstrap? <a href="">Visit the homepage</a> or read our <a href="">getting started guide.</a>
+			</address>
+			<a href="#navbar_place">Back to top</a>
 		</div>
+			
 		
 	</div>
 	<script src="js/jquery-3.3.1.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script>
-		var isClose=true;
-		$(".navbar-toggle").click(function(){
-			if(isClose){
-				$("body").css("padding-top","350px");
-				isClose=false;
-			} else{
-				$("body").css("padding-top","70px");
-				isClose=true;
-			}	
-		})	
 		
 	</script>
 </body>
