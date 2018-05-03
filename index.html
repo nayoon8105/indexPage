@@ -20,6 +20,21 @@
 			#nav_collapse{
 			 display: none;
 			}
+			body{
+			padding-top: 200px;
+
+			}
+		}
+		@media (max-width: 767px){
+			body{
+			padding-top: 70px;
+			}
+		}
+		body{
+			transition: padding-top 0.2s linear;
+		}
+		.btn{
+			margin: 6px;
 		}
 	</style>
 </head>
@@ -52,12 +67,27 @@
 			</button>
 		</div>
 	</div> 
-
+	<div class="container">
+		<div class="col-xs-10 col-xs-offset-1" id="example" style="text-align: center;">
+			<h1>Album example</h1>
+			<p class="text-muted" style="font-size: larger;">Something short and leading about the collection below—its contents, <br> the creator, etc. Make it short and sweet, but not too short so folks don't <br>simply skip over it entirely.</p><br>
+			<button class="btn btn-primary">Main call to action</button> <button class="btn btn-default">Secondary action</button>
+		</div>
+	</div>
 
 	<script src="js/jquery-3.3.1.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script>
-		
+		var isClose=true;
+		$(".navbar-toggle").click(function(){
+			if(isClose){
+				$("body").css("padding-top","350px");
+				isClose=false;
+			} else{
+				$("body").css("padding-top","70px");
+				isClose=true;
+			}	
+		})	
 		
 	</script>
 </body>
